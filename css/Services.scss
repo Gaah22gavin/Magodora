@@ -58,21 +58,7 @@ $regular:"Poppins-regular";
 $medium: "Poppins-medium";
 $rage: "rage";
 
-// @mixin font-type($font-name){
-// 	@if ($font-name == paragraph) {
-// 		font-family: $medium;
-// 		font-size: 15px;
-// 		line-height: 1.4;
-// 		color:$bg_color;
-		
-// 	}@else if($font-name == heading){
-// 		font-family: $medium;
-// 		font-size: 24px;
-// 		color:$color-main;
-		
-// 	}
-	
-// }
+
 
 @mixin btn {
     padding: 0.6rem 2rem;
@@ -255,11 +241,11 @@ header{
 
 // banner
 .banner{
-    background: url("../images/Group30.png");
+    background: url("../images/Group41.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    background-position: right;
+    height: 90vh;
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -267,17 +253,40 @@ header{
     padding: 35px 0px 0px;
 
     .text{
-        text-align: center;
+        // text-align: center;
+        width: 80%;
         padding: 0px 5px;
         h1{
             font-family: $medium;
-            font-size: 20px;
+            font-size: 34px;
             color: white;
             text-transform: capitalize;
             line-height: 1.4;
+            display: flex;
+            align-items: center;
             span{
-                color: #000080;
-                text-transform: capitalize;
+                flex-basis: 30%;
+                display: flex;
+                align-items: center;
+                hr{
+                    display: inline-block;
+                    margin: 0;
+                }
+                .dot{
+                    background-color: white;
+                    width: 15px;
+                    height: 15px;
+                    border: none;
+                    border-radius: 50%;
+                    
+                }
+
+                .line{
+                    background-color: white;
+                    width: 70%;
+                    padding: 1px;
+                    border: none;
+                }
             }
         } 
         
@@ -301,38 +310,10 @@ header{
 }
 // end here
 
-// about us
-.commit{
-
-    text-align: center;
-    .box{
-        font-family: $medium;
-        font-size: 18px;
-        text-transform: capitalize;
-        background-color: hsla(0, 98%, 50%, 0.5);
-        padding: 25px 0px;
-        transition: all .3s ease-in-out;
-    }
-
-    .box-middle{
-        font-family: $rage;
-        font-size: 22px;
-        text-transform: capitalize;
-        background-color: hsla(240, 100%, 25%, 0.5);
-        color: white;
-        padding: 20px 0px;
-        span{
-            display: block;
-        }
-    }
-
-}
-// end here
-
-// about-us
-.about-us{
+// workshop
+.workshop{
     margin: 30px 0px;
-    .about-text{
+    .workshop-text{
         text-align: center;
         padding: 0px 5px;
         margin: 50px 0px;
@@ -341,143 +322,61 @@ header{
             font-size: 26px;
             text-transform: capitalize;
             line-height: 1.4;
-        } 
-        
-        p{
-            font-family: $regular;
-            font-size: 14px;
-            margin: 30px 5px 40px;
-            line-height: 1.4;
-        }
-
-        a{
-            @include btn();
-            background: $nayvblue;   
-        }
-    }
-
-    .about-img{
-        padding: 0px 5px;
-        position: relative;
-        text-align: center;
-        img{
-            width: 95%;
             margin: 0px auto;
-        }
-        .two{
-            bottom: -79px;
-            left: 12%;
-            width: 74%;
-            position: absolute;
-        }
-    }
-}
-// end here
 
-// why-choose
-.why-choose{
-    background-image:url("../images/Group14.png") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 30px 10px;
-    margin: 135px 0px 50px;
-    .why-text{
-        text-align: center;
-        padding: 0px 5px;
-        margin: 10px 0px 50px;
-        color: white;
-        h2{
-            font-family: $medium;
-            font-size: 26px;
-            text-transform: capitalize;
-            line-height: 1.4;
+            span{
+                display: block;
+                color: $redd;
+            }
         } 
         
         p{
             font-family: $regular;
             font-size: 14px;
-            margin: 20px 5px 40px;
+            margin: 30px 5px;
             line-height: 1.4;
         }
 
-        a{
-            @include btn();
-            background: $nayvblue;   
-        }
     }
-
-    .boxs{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: center;
-        color: $redd;
-        .box{
-            width: 45%;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: $medium;
-            font-size: 18px;
-            text-transform: capitalize;
-            background-color: white;
-            // padding: 25px 0px;
-            transition: all .3s ease-in-out;
-            margin: 10px 0px ;
-        }
-        #boxx{
-            font-family: $rage;
-            background-color: $nayvblue;
-            font-size: 24px;
-            color: white;
-            // padding: 30px 0px;
-            align-items: center;
-        }
-    }
-    
 }
 // end here
 
-//our-customers
-.our-customers{
-    padding: 35px 0px 50px;
-    margin: 0px 0px 50px;
-    background-image: url(../images/Group15.png);
+//since
+.trucks{
+    padding: 0px 10px;
+    margin: 30px 0px;
     h2{
-        color: white;
-        font-family:$medium;
+        font-family: $medium;
         font-size: 26px;
-        text-align: center;
-        margin: 0px 0px 50px;
+        text-transform: capitalize;
+        line-height: 1.4;
+        margin: 0px 0px 30px;           
     }
 
-    .customers-logs{
+    .box{
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
         text-align: center;
-        background-color: #c2c2c252;
-        width: 94%;
-        border-radius: 10px;
-        margin: 0px auto;
-        h3{
-            color: white;
-            font-size: 24px;
-            font-family: $medium;
-            width: 45%;
-            margin: 10px 0px;
+        margin: 10px 0px;
+        .img{
+            img{
+                width: 100%;
+            }
         }
 
-        .bluee{
-            color:$nayvblue;
-            font-family: $rage;
-            font-size: 30px;
+        .box-text{
+            h3{
+            
+                font-family: $regular;
+                font-size: 18px;
+                margin: 30px 5px;
+                
+            }
         }
     }
 }
 //end here
+
 
 // footer
 footer{
@@ -651,14 +550,15 @@ footer{
     }
 
     .banner{
-        height: 70vh;
+        height: 55vh;
         padding: 100px 0px 0px;
         box-sizing: border-box;
+        background-position: center;
         width: 95%;
         .text{
             padding: 0px 20px;
             h1{
-                font-size: 34px;
+                font-size: 40px;
                 width: 70%;
                 margin: 0 auto;
                 span{
@@ -684,128 +584,60 @@ footer{
         }
     }
 
-    .commit{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 0px 0px 50px;
-        .box{
-            font-size: 16px;
-            flex-basis: 23%;
-            padding: 30px;
-            box-sizing: border-box;
-        }
-    
-        .box-middle{
-            flex-basis: 35%;
-            font-size: 22px;
-        }
-    
-    }
-
-    .about-us{
+    .workshop{
         width: 95%;
         margin: 0px auto;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         // align-items: center;
-        .about-text{
-            text-align: left;
+        .workshop-text{
+            text-align: center;
+            padding: 0px 10px;
             flex-basis:45%;
             h2{
-                font-size: 32px;
+                font-size:40px;
             }
             p{
-                font-size: 16px;
-            }
-            a{
-                font-size: 18px;
+                font-size: 22px;
+                line-height: 1.5;
             }
         }
 
-        .about-img{
-            flex-basis: 45%;
-            margin: 8% 0px 0px;
-            img{
-                width: 100%;
-            }
-
-            .two{
-                bottom: 13px;
-                left: -20%;
-                width: 66%;
-            }
-        }
     }
 
-    .why-choose{
-        margin: 80px auto;
-        padding: 35px 40px;
-        width: 85%;
-        .why-text{
-            text-align:left;
-            padding: 0px 5px;
-            margin: 10px 0px 50px;
-            color: white;
-            h2{
-                font-size: 32px;
-            } 
-            
-            p{
-                font-size: 20px;
-                width: 70%;
+    .trucks{
+        padding: 0px;
+        margin: 50px auto;
+        width: 90%;
+
+        h2{
+            font-size:40px;
+            margin: 0px 0px 40px;
+        }
+    
+        .box{
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+            margin: 0px 0px;
+            .img{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
             }
     
-            a{
-                font-size: 18px;
+            .box-text{
+                width: 50%;
+                h3{
+                    font-size: 22px;
+                    width: 55%;
+                    margin: 0px auto;
+                }
             }
         }
 
-        .boxs{
-            .box{
-                width: 23%;
-                height: 80px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: $medium;
-                font-size: 18px;
-                text-transform: capitalize;
-                background-color: white;
-                // padding: 25px 0px;
-                transition: all .3s ease-in-out;
-                margin: 10px 0px ;
-            }
-            #boxx{
-                height: 105px;
-                margin: 0px;
-                font-family: $rage;
-                background-color: $nayvblue;
-                font-size: 24px;
-                color: white;
-                // padding: 30px 0px;
-                align-items: center;
-            }
-        }
-    }
-
-    .our-customers{
-        h2{
-            font-size: 36px;
-        } 
-
-        .customers-logs{
-            padding: 40px 0px;
-            width: 80%;
-            h3{
-                font-size: 28px;
-                width: 30%;
-            }
-
-            .bluee{
-                font-size: 31px;
-            }
+        #boxx{
+            flex-direction: row-reverse;
         }
     }
 
@@ -941,14 +773,14 @@ footer{
                             font-size: 18px;
                             transition: all .3s ease-in-out;
                             &:hover{
-                                color: $redd;  
-                              }
-                              &:focus{
-                                  color: $redd; 
-                              }
-                              &:active{
-                                  color: $redd;
-                              }
+                              color: $redd;  
+                            }
+                            &:focus{
+                                color: $redd; 
+                            }
+                            &:active{
+                                color: $redd;
+                            }
                         }
                     }
     
@@ -961,7 +793,7 @@ footer{
     }
 
     .banner{
-        height: 90vh;
+        height: 83vh;
         width: 90%;
         margin: 0px auto;
         padding: 0px 0px 0px;
@@ -970,7 +802,7 @@ footer{
             text-align: left;
             padding: 0px 0px 0px 30px;
             h1{
-                font-size: 32px;
+                font-size: 44px;
                 width: 53%;
                 margin: 0 0;
                 span{
@@ -997,139 +829,63 @@ footer{
 
     }
 
-    .commit{
-        margin: 0px 0px 50px;
-        .box{
-            flex-basis: 20%;
-            box-sizing: border-box;
-            padding: 45px;
-            h3{
-                font-size: 16px;
-            }
-        }
-    
-        .box-middle{
-            flex-basis: 35%;
-            font-size: 22px;
-            padding: 20px 0px 30px;
-        }
-    
-    }
-
-    .about-us{
-    width: 90%;
-    margin: 0px auto;
-    display: flex;
-    justify-content: space-between;
-    .about-text{
-        text-align: left;
-        flex-basis:40%;
-        h2{
-            font-size: 36px;
-        }
-        p{
-            font-size: 16px;
-            margin: 50px 0px;        }
-        a{
-            font-size: 18px;
-        }
-    }
-
-    .about-img{
-        flex-basis: 40%;
-        margin: 3% 0px 0px;
-        img{
-            width: 90%;
-        }
-
-        .two{
-            position: relative;
-            bottom: 53px;
-            left: -55%;
-            width: 70%;
-        }
-    }
-
-    }
-
-    .why-choose{
-        margin: 30px auto 80px;
-        padding: 80px 40px;
-        width: 80%;
-        .why-text{
-            text-align:left;
-            padding: 0px 5px;
-            margin: 10px 0px 50px;
-            color: white;
+    .workshop{
+        width: 90%;
+        margin: 40px auto 50px;
+        flex-direction: column;
+        // align-items: center;
+        .workshop-text{
+            text-align: center;
+            padding: 0px 10px;
+            flex-basis:45%;
             h2{
-                font-size: 32px;
-            } 
-            
-            p{
-                font-size: 20px;
-                width: 70%;
+                font-size:38px;
             }
-    
-            a{
-                font-size: 18px;
+            p{
+                font-size: 16px;
+                line-height: 1.5;
+                span{
+                    display: block;
+                }
             }
         }
 
-        .boxs{
-            align-items: center;
-            margin: 70px 0px 0px;
-            .box{
-                width: 23%;
-                height: 80px;
-                font-size: 18px;
-                transition: all .4s ease-in-out;
-                &:hover{
-                    height: 130px;
-                    font-size: 28px;
-                    background-color:$nayvblue;
-                    color: white;
-                    font-family: $rage;
-                }
-            }
-            #boxx{
-                height: 130px;
-                font-family: $rage;
-                background-color: $nayvblue;
-                font-size: 28px;
-                color: white;
-                align-items: center;
-                transition: all .4s ease-in-out;
-                &:hover{
-                    background-color: white;
-                    color: red;
-                }
-            }
-        }
     }
 
-    .our-customers{
-        padding: 100px 100px;
-        background-position-y:-287px;
+    .trucks{
+        padding: 0px;
+        margin: 50px auto;
+        width: 90%;
 
         h2{
-            font-size: 36px;
+            font-size:38px;
+            margin: 0px 0px 50px;
+        }
+    
+        .box{
+            flex-direction: row;
+            align-items: center;
             text-align: left;
-            margin: 0px 0px 70px;
-        } 
-
-        .customers-logs{
-            justify-content: space-between;
-            padding: 50px 0px;
-            width: 100%;
-            h3{
-                font-size: 50px;
-                width: 30%;
-                margin: 30px 0px;
+            margin: 0px 0px;
+            .img{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
             }
-
-            .bluee{
-                font-size: 50px;
+    
+            .box-text{
+                width: 50%;
+                h3{
+                    font-size: 28px;
+                    width: 55%;
+                    margin: 10px auto;
+                }
             }
+        }
+
+        #boxx{
+            flex-direction: row-reverse;
         }
     }
 

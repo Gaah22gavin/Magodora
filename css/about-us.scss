@@ -408,10 +408,13 @@ footer{
 
         .phone{
             font-family: $medium;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 20px 0px;
-            i{
-                color: #000080;
+            img{
+                width: 8%;
+                margin: 0px 10px;
             }
         }
 
@@ -807,7 +810,7 @@ footer{
     }
 
     .banner{
-        height: 90vh;
+        height: 83vh;
         width: 90%;
         margin: 0px auto;
         padding: 0px 0px 0px;
@@ -903,6 +906,7 @@ footer{
             color: white;
         }
     }
+    
     footer{
         width: 90%;
         margin: 0px auto;
@@ -922,8 +926,9 @@ footer{
             .phone{
                 margin: 40px 0px;
                 font-size: 18px;
-                i{
-                    color: #000080;
+                justify-content: flex-start;
+                img{
+                    margin: 0px 10px 0px 0px ;
                 }
             }
     

@@ -197,7 +197,7 @@ header .overlay nav ul li {
 }
 
 .banner {
-  background: url("../images/Group31.png");
+  background: url("../images/Group42.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
@@ -222,9 +222,10 @@ header .overlay nav ul li {
   align-items: center;
 }
 .banner .text h1 span {
-  flex-basis: 30%;
+  flex-basis: 18%;
   display: flex;
   align-items: center;
+  margin: 0px 10px 0px;
 }
 .banner .text h1 span hr {
   display: inline-block;
@@ -261,75 +262,27 @@ header .overlay nav ul li {
   background: #000080;
 }
 
-.about-us {
+.workshop {
   margin: 30px 0px;
 }
-.about-us .about-text {
+.workshop .workshop-text {
   text-align: center;
   padding: 0px 5px;
   margin: 50px 0px;
 }
-.about-us .about-text h2 {
+.workshop .workshop-text h2 {
   font-family: "Poppins-medium";
   font-size: 26px;
   text-transform: capitalize;
   line-height: 1.4;
-  border-left: 1px solid black;
-  width: 50%;
   margin: 0px auto;
-}
-.about-us .about-text h2 span {
-  display: block;
   color: #FD0909;
 }
-.about-us .about-text p {
+.workshop .workshop-text p {
   font-family: "Poppins-regular";
   font-size: 14px;
   margin: 30px 5px;
   line-height: 1.4;
-}
-.about-us .about-img {
-  padding: 0px 5px;
-  position: relative;
-  text-align: center;
-}
-.about-us .about-img img {
-  width: 95%;
-  margin: 0px auto;
-}
-.about-us .about-img .two {
-  bottom: -79px;
-  left: 12%;
-  width: 74%;
-  position: absolute;
-}
-
-.since {
-  margin: 40px 0px 20px;
-  padding: 0px 10px;
-  display: flex;
-  flex-direction: column;
-}
-.since .box {
-  text-align: center;
-  padding: 30px 5px 0px;
-  margin: 20px 0px;
-}
-.since .box h2 {
-  font-family: "Poppins-medium";
-  font-size: 26px;
-  line-height: 1.4;
-  padding: 0px 10px;
-}
-.since .box p {
-  font-family: "Poppins-regular";
-  font-size: 14px;
-  margin: 30px 5px 40px;
-  line-height: 1.4;
-}
-.since #bluee {
-  background-color: #000080;
-  color: white;
 }
 
 footer {
@@ -346,14 +299,11 @@ footer .box-one h2 {
 }
 footer .box-one .phone {
   font-family: "Poppins-medium";
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   margin: 20px 0px;
 }
-footer .box-one .phone img {
-  width: 8%;
-  margin: 0px 10px;
+footer .box-one .phone i {
+  color: #000080;
 }
 footer .box-one p {
   font-family: "Poppins-regular";
@@ -500,76 +450,50 @@ footer .rights h3 {
     font-size: 20px;
   }
 
-  .about-us {
+  .workshop {
     width: 95%;
     margin: 0px auto;
     flex-direction: column;
   }
-  .about-us .about-text {
+  .workshop .workshop-text {
     text-align: center;
     padding: 0px 10px;
     flex-basis: 45%;
   }
-  .about-us .about-text h2 {
+  .workshop .workshop-text h2 {
     font-size: 40px;
   }
-  .about-us .about-text p {
+  .workshop .workshop-text p {
     font-size: 22px;
     line-height: 1.5;
   }
-  .about-us .about-img {
-    flex-basis: 45%;
-    margin: 8% 0px 0px;
-  }
-  .about-us .about-img img {
-    width: 100%;
-  }
-  .about-us .about-img .two {
-    bottom: 13px;
-    left: -20%;
-    width: 66%;
-  }
 
-  .since .box {
-    text-align: center;
-    padding: 30px 5px 0px;
-    margin: 20px 0px;
-    background-color: #C2C2C2;
-  }
-  .since .box h2 {
-    font-family: "Poppins-medium";
-    font-size: 36px;
-    line-height: 1.4;
+  footer {
+    margin: 50px 0px 20px;
+    display: flex;
+    flex-direction: column;
     padding: 0px 10px;
-  }
-  .since .box p {
-    font-family: "Poppins-regular";
-    font-size: 22px;
-    margin: 30px 5px 40px;
-    line-height: 1.4;
-  }
-  .since #bluee {
-    background-color: #000080;
-    color: white;
-  }
-
-  footer .box-one {
-    width: 50%;
-    margin: 0px auto;
+    text-align: center;
   }
   footer .box-one h2 {
-    font-size: 34px;
+    font-family: "Poppins-regular";
+    font-size: 24px;
+    color: #FD0909;
   }
   footer .box-one .phone {
+    font-family: "Poppins-medium";
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px 0px;
-    font-size: 19px;
   }
-  footer .box-one .phone i {
-    color: #000080;
+  footer .box-one .phone img {
+    width: 8%;
+    margin: 0px 10px;
   }
   footer .box-one p {
-    margin: 20px auto;
-    font-size: 19px;
+    font-family: "Poppins-regular";
+    margin: 20px 0px;
   }
   footer .box-one p span {
     display: block;
@@ -577,24 +501,34 @@ footer .rights h3 {
   footer .box-one a {
     color: #000080;
     font-family: "Poppins-regular";
-    font-size: 19px;
+    font-size: 14px;
   }
   footer .box-two {
     margin: 30px 0px;
   }
   footer .box-two h2 {
-    font-size: 34px;
+    font-family: "Poppins-regular";
+    font-size: 24px;
+    color: #FD0909;
   }
   footer .box-two h3 {
-    font-size: 19px;
+    font-family: "Poppins-regular";
+    margin: 20px 0px;
   }
   footer .box-two form {
     position: relative;
-    width: 60%;
+    width: 90%;
     margin: 0px auto;
   }
   footer .box-two form input {
-    font-size: 19px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    background-color: #C2C2C2;
+    padding: 1rem 0.2rem 0.7rem 0.8rem;
+    font-family: "Poppins-regular";
+    font-size: 14px;
   }
   footer .box-two form button {
     position: absolute;
@@ -603,21 +537,36 @@ footer .rights h3 {
     border: none;
     border-radius: 30px;
     background-color: #000080;
-    padding: 0.8rem 1.4rem;
-    font-size: 19px;
+    padding: 0.6rem 1.4rem;
+    font-family: "Poppins-regular";
+    font-size: 18px;
     color: white;
   }
   footer .box-three h2 {
-    font-size: 34px;
+    font-family: "Poppins-regular";
+    font-size: 24px;
+    color: #FD0909;
+  }
+  footer .box-three ul {
+    font-family: "Poppins-regular";
   }
   footer .box-three ul li {
     margin: 15px 0px;
+    list-style: none;
   }
   footer .box-three ul li a {
-    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+  footer hr {
+    background-color: black;
+    width: 90%;
+    margin: 10px auto;
   }
   footer .rights h3 {
-    font-size: 20px;
+    font-family: "Poppins-regular";
+    color: #FD0909;
   }
 }
 @media (min-width: 1280px) {
@@ -699,61 +648,27 @@ footer .rights h3 {
     font-size: 16px;
   }
 
-  .about-us {
+  .workshop {
     width: 90%;
-    margin: 0px auto;
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 70px auto 90px;
+    flex-direction: column;
   }
-  .about-us .about-text {
-    text-align: left;
-    flex-basis: 40%;
-  }
-  .about-us .about-text h2 {
+  .workshop .workshop-text {
     text-align: center;
-    font-size: 38px;
-    width: 40%;
-    margin: 0px 0px;
-  }
-  .about-us .about-text p {
-    font-size: 14px;
-    margin: 20px 0px;
-  }
-  .about-us .about-text a {
-    font-size: 18px;
-  }
-  .about-us .about-img {
+    padding: 0px 10px;
     flex-basis: 45%;
   }
-  .about-us .about-img img {
-    width: 100%;
+  .workshop .workshop-text h2 {
+    font-size: 38px;
   }
-
-  .since {
-    flex-direction: row;
-    padding: 0px 0px;
-    margin: 40px 0px;
+  .workshop .workshop-text p {
+    width: 50%;
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 1.6;
   }
-  .since .box {
-    flex: 50%;
-    padding: 30px 0px;
-    box-sizing: border-box;
-    margin: 20px 0px;
-  }
-  .since .box h2 {
-    font-size: 26px;
-  }
-  .since .box p {
-    margin: 10px 0px;
-    padding: 0px 50px;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  .since #bluee {
-    background-color: #000080;
-    color: white;
+  .workshop .workshop-text p span {
+    display: block;
   }
 
   footer {
@@ -850,4 +765,4 @@ footer .rights h3 {
   footer .rights h3 {
     font-size: 18px;
   }
-}/*# sourceMappingURL=about-us.css.map */
+}/*# sourceMappingURL=contactUs.css.map */
