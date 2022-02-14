@@ -297,6 +297,7 @@ header .overlay nav ul li {
   text-transform: capitalize;
   line-height: 1.4;
   margin: 0px 0px 30px;
+  text-align: center;
 }
 .trucks .box {
   display: flex;
@@ -333,7 +334,7 @@ footer .box-one .phone {
   margin: 20px 0px;
 }
 footer .box-one .phone img {
-  width: 8%;
+  width: 6%;
   margin: 0px 10px;
 }
 footer .box-one p {
@@ -707,6 +708,7 @@ footer .rights h3 {
   .trucks h2 {
     font-size: 38px;
     margin: 0px 0px 50px;
+    text-align: left;
   }
   .trucks .box {
     flex-direction: row;

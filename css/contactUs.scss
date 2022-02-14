@@ -354,10 +354,13 @@ footer{
 
         .phone{
             font-family: $medium;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 20px 0px;
-            i{
-                color: #000080;
+            img{
+                width: 6%;
+                margin: 0px 10px;
             }
         }
 

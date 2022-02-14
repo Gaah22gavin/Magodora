@@ -299,11 +299,14 @@ footer .box-one h2 {
 }
 footer .box-one .phone {
   font-family: "Poppins-medium";
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 20px 0px;
 }
-footer .box-one .phone i {
-  color: #000080;
+footer .box-one .phone img {
+  width: 6%;
+  margin: 0px 10px;
 }
 footer .box-one p {
   font-family: "Poppins-regular";
