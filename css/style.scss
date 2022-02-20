@@ -127,6 +127,7 @@ header{
                 font-size: 22px;
                 padding: 10px 0px;
                 color: black;
+       
             } 
         }
     }
@@ -675,6 +676,11 @@ footer{
             a{
                 padding: 1rem 1.9rem;
                 font-size: 20px;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: white;
+                    color: red;
+                }
                 
             }
     
@@ -721,6 +727,12 @@ footer{
             }
             a{
                 font-size: 18px;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: $redd;
+                    color: white;
+                }
+                
             }
         }
 
@@ -759,6 +771,12 @@ footer{
     
             a{
                 font-size: 18px;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: white;
+                    color: red;
+                }
+                
             }
         }
 
@@ -942,13 +960,10 @@ footer{
                             transition: all .3s ease-in-out;
                             &:hover{
                                 color: $redd;  
-                              }
-                              &:focus{
-                                  color: $redd; 
-                              }
-                              &:active{
-                                  color: $redd;
-                              }
+                            }
+                            &:active{
+                                color: $redd;
+                            }
                         }
                     }
     
@@ -1084,6 +1099,7 @@ footer{
                 font-size: 18px;
                 transition: all .4s ease-in-out;
                 &:hover{
+                    cursor: pointer;
                     height: 130px;
                     font-size: 28px;
                     background-color:$nayvblue;

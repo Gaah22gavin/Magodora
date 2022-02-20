@@ -251,7 +251,7 @@ header .overlay nav ul li {
   background-color: rgba(252, 3, 3, 0.5);
   padding: 25px 0px;
   transition: all 0.3s ease-in-out;
-}
+} 
 .commit .box-middle {
   font-family: "rage";
   font-size: 22px;
@@ -574,6 +574,11 @@ footer .rights h3 {
   .banner .text a {
     padding: 1rem 1.9rem;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .banner .text a:hover {
+    background-color: white;
+    color: red;
   }
 
   .commit {
@@ -612,6 +617,11 @@ footer .rights h3 {
   }
   .about-us .about-text a {
     font-size: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  .about-us .about-text a:hover {
+    background-color: #FD0909;
+    color: white;
   }
   .about-us .about-img {
     flex-basis: 45%;
@@ -646,6 +656,11 @@ footer .rights h3 {
   }
   .why-choose .why-text a {
     font-size: 18px;
+    transition: all 0.3s ease-in-out;
+  }
+  .why-choose .why-text a:hover {
+    background-color: white;
+    color: red;
   }
   .why-choose .boxs .box {
     width: 23%;
@@ -796,16 +811,13 @@ footer .rights h3 {
   header .overlay nav ul li a:hover {
     color: #FD0909;
   }
-  header .overlay nav ul li a:focus {
-    color: #FD0909;
-  }
   header .overlay nav ul li a:active {
     color: #FD0909;
   }
 
   .banner {
     height: 90vh;
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
     padding: 0px 0px 0px;
   }
@@ -914,6 +926,7 @@ footer .rights h3 {
     transition: all 0.4s ease-in-out;
   }
   .why-choose .boxs .box:hover {
+    cursor: pointer;
     height: 130px;
     font-size: 28px;
     background-color: #000080;
